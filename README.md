@@ -26,9 +26,14 @@ $ gem install hash_fingerprint
 
 ```ruby
 require 'hash_fingerprint'
+hash = { a: { b: 'b', c: 'c' }, d: 'd', e: { f: 1, g: 2 } }
+HashFingerprint.fingerprint hash
+# => "6355f75aadd5a4841b87b88bb8f25304b706feafd33e84a8d8a47a97baa5d730"
 
-HashFingerprint.fingerprint {item: {node: 'a', node: 'b'}, item: 'c'}
-# => "TODO:output fingerprint"
+a1 = [1, 2, 3, [4, [5, 6]], %w(a b c)]
+a2 = [%w(c b a), 3, 2, 1, [[5, 6], 4]]
+HashFingerprint.compare a1 a2
+# => true
 ```
 
 ## Development

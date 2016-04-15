@@ -1,6 +1,6 @@
 # HashFingerprint
 
-[![Build Status](https://travis-ci.org/jasonyost/hash_fingerprint.svg?branch=master)](https://travis-ci.org/jasonyost/hash_fingerprint)
+[![Build Status](https://travis-ci.org/jasonyost/hash_fingerprint.svg?branch=master)](https://travis-ci.org/jasonyost/hash_fingerprint) [![Gem Version](https://badge.fury.io/rb/hash_fingerprint.svg)](https://badge.fury.io/rb/hash_fingerprint)
 
 Create a SHA256 fingerprint of a hash or array
 
